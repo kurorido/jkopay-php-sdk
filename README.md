@@ -20,6 +20,7 @@ $Price = 9999;
 $JkoPayService = new \Jkopay\JkoPayService(
     api_key: $api_key,
     secret_key: $secret_key,
+    testing: false,
 );
 
 $response = $JkoPayService->sendCheckout(
